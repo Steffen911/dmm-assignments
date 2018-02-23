@@ -1,0 +1,71 @@
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+%
+% Copied from https://github.com/heathermiller/papers-documents/tree/master/rem2013
+
+\documentclass{support/acm_proc_article-sp}
+\input{support/praeambel}
+\pagenumbering{arabic}
+\begin{document}
+
+    \title{Data Mining and Matrices (FSS18) \\ Assignment 1: Singular Value Decomposition}
+
+    \numberofauthors{1}
+    \author{
+    \alignauthor
+    Steffen Schmitz\\
+    \affaddr{University of Mannheim}\\
+    \affaddr{stefschm@mail.uni-mannheim.de}
+    }
+
+    \maketitle
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%
+    %% 1) DATASET STATISTICS
+    %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Dataset Statistics}
+    \vspace{1.5\baselineskip}
+
+    Explore and preprocess the dataset.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%
+    %% 1.a) KERNEL DENSITY PLOT
+    %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \subsection{Kernel Density Plot}
+    \label{sec:kdp}
+    \vspace{\baselineskip}
+
+    \textbf{Task.} Look at the kernel density plot (code provided) of all features and discuss what you see (or don't see).
+
+    We estimate the kernel density estimation with the gaussian\_kde method from the scipy.stats
+    package\footnote{\href{https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html}{https://docs.scipy.org/gaussian\_kde}}.
+    It returns the estimated probability density function of each feature.
+    As described in the documentation the plot may be "oversmoothed" what leads to non-zero results for $x < 0$,
+    although the statistics (Output of Figure \ref{fig:describe}) show that all features have minimal values that are
+    greater or equal to zero.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%
+    %% BIBLIOGRAPHY
+    %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \bibliographystyle{abbrv}
+    \bibliography{support/bib}
+
+\end{document}

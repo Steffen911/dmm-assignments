@@ -1,0 +1,8 @@
+**/*.log
+.idea
+**/*.aux
+**/*.out
+**/*.bbl
+**/*.blg
+dmm18-a1-stefschm/dmm18-a1-stefschm.pdf
+dmm18-a1-stefschm/dmm18-a1-stefschm-notebook.pdf
