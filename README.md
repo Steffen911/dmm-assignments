@@ -5,7 +5,7 @@ at the University of Mannheim in the spring semester 2018.
 
 ## Assignments
 
-- Singular Value Decomposition (Feb 22 - Mar 25): dmm18-a1-stefschm
+- Singular Value Decomposition (Feb 22 - Mar 25): [dmm18-a1-stefschm](https://s3.eu-central-1.amazonaws.com/steffen911-papers/dmm18-a1-stefschm.pdf)
 
 ## Building the documents
 

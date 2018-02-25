@@ -1,8 +1,10 @@
 **/*.log
 .idea
+*.iml
 **/*.aux
 **/*.out
 **/*.bbl
 **/*.blg
+.ipynb_checkpoints/
 dmm18-a1-stefschm/dmm18-a1-stefschm.pdf
 dmm18-a1-stefschm/dmm18-a1-stefschm-notebook.pdf
