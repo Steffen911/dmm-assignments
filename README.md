@@ -7,6 +7,7 @@ at the University of Mannheim in the spring semester 2018.
 
 - Singular Value Decomposition (Feb 22 - Mar 25): [dmm18-a1-stefschm](https://s3.eu-central-1.amazonaws.com/steffen911-papers/dmm18-a1-stefschm.pdf)
 - Matrix Completion (Mar 25 - Apr 22): [dmm18-a2-stefschm](https://s3.eu-central-1.amazonaws.com/steffen911-papers/dmm18-a2-stefschm.pdf)
+- Non-Negative Matrix Factorization (Apr 11 - May 06): [dmm18-a3-stefschm](https://s3.eu-central-1.amazonaws.com/steffen911-papers/dmm18-a3-stefschm.pdf)
 
 ## Building the documents
 
