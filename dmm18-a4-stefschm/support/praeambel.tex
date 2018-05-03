@@ -1,0 +1,105 @@
+\usepackage{listings}
+\usepackage{url}
+\usepackage{support/bcprules}
+\usepackage{support/prooftree}
+\usepackage{support/math}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\renewcommand{\thesubsubsection}{\thesection.\alph{subsection}.\roman{subsubsection}}
+
+\definecolor{blue}{rgb}{0,0,0.5}
+\definecolor{red}{rgb}{0.6,0,0}
+\definecolor{green}{rgb}{0,0.5,0}
+\definecolor{grey}{rgb}{0.2,0.2,0.2}
+
+\lstdefinelanguage{Python}{
+keywords={typeof, null, catch, switch, in, int, str, float, self, from, import},
+keywordstyle=\color{blue}\bfseries,
+ndkeywords={boolean, throw, import},
+ndkeywords={return, class, if ,elif, endif, while, do, else, True, False , catch, def},
+ndkeywordstyle=\color{blue}\bfseries,
+identifierstyle=\color{grey},
+sensitive=false,
+comment=[l]{\#},
+morecomment=[s]{/*}{*/},
+commentstyle=\color{green}\ttfamily,
+stringstyle=\color{green}\ttfamily,
+}
+
+\lstset{language=Python}
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+% Remove copyright space
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
+% comments and notes
+\newcommand{\comment}[1]{}
+\newcommand{\note}[1]{{\bf $\clubsuit$ #1 $\spadesuit$}}
+\newcommand{\ifreport}[1]{#1}
+%\newcommand{\ifreport}[1]{}
+
+\newcommand{\todo}{{\bf \colorbox{red}{\color{white}TODO:}}}
+\newcommand{\ie}{{\em i.e.,~}}
+\newcommand{\eg}{{\em e.g.,~}}
+\newcommand{\term}[1]{\mbox{\texttt{#1}}}
+\newcommand{\itl}[1]{\mbox{\textit{#1}}}
+
+% commas and semicolons
+\newcommand{\comma}{,\,}
+\newcommand{\commadots}{\comma \ldots \comma}
+\newcommand{\semi}{;\mbox{;};}
+\newcommand{\semidots}{\semi \ldots \semi}
+
+% spacing
+\newcommand{\gap}{\quad\quad}
+\newcommand{\biggap}{\quad\quad\quad}
+\newcommand{\nextline}{\\ \\}
+\newcommand{\htabwidth}{0.5cm}
+\newcommand{\tabwidth}{1cm}
+\newcommand{\htab}{\hspace{\htabwidth}}
+\newcommand{\tab}{\hspace{\tabwidth}}
+\newcommand{\linesep}{\ \hrulefill \ \smallskip}
+
+\newcommand{\sectionline}{%
+\nointerlineskip \vspace{\baselineskip}%
+\hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
+\par\nointerlineskip \vspace{\baselineskip}
+}
+
+% figures
+\newcommand{\figurebox}[1]
+{\fbox{\begin{minipage}{\textwidth}
+           #1 \medskip
+\end{minipage}}}
+\newcommand{\twofig}[3]
+{\begin{figure*}[t]
+     #3\ \hrulefill\
+        \caption{\label{#1}#2}
+\end{figure*}}
+\newcommand{\boxfig}[3]
+{\begin{figure*}
+     \figurebox{#3\caption{\label{#1}#2}}
+\end{figure*}}
+\newcommand{\figref}[1]
+{Figure~\ref{#1}}
+
+% arrays
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bda}{\[\ba}
+\newcommand{\eda}{\ea\]}
+\newcommand{\ei}{\end{array}}
+\newcommand{\bcases}{\left\{\begin{array}{ll}}
+\newcommand{\ecases}{\end{array}\right.}
